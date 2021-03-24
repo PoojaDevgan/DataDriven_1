@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven Project1" >
+
+ <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      <listener class-name="com.ssl2.listeners.CustomListeners"/>
+       </listeners>
+
+  <test name="Login Test">
+    <classes>
+      <class name="com.ssl2.testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="Add Customer Test">
+    <classes>
+      <class name="com.ssl2.testcases.AddCustomerTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
+
+
